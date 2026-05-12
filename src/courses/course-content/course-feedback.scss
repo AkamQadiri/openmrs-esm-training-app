@@ -1,0 +1,32 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.feedbackContainer {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-06;
+  align-self: center;
+}
+
+.feedbackHeader {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-03;
+
+  h2 {
+    color: colors.$gray-70;
+    font-weight: 400;
+  }
+}
+
+.feedbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-06;
+}
+
+.feedbackScale {
+  font-size: 0.75rem;
+  color: colors.$gray-70;
+  margin-top: layout.$spacing-02;
+}

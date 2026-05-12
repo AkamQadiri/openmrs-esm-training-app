@@ -1,0 +1,48 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+@use '@carbon/type';
+
+.bulkCreationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-07;
+}
+
+.instructionsSection {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+  padding: layout.$spacing-05;
+  background-color: colors.$gray-10;
+  border: 1px solid colors.$gray-20;
+  border-left: 4px solid colors.$blue-60;
+
+  ul {
+    padding-left: layout.$spacing-06;
+
+    li {
+      padding: layout.$spacing-02 0;
+    }
+  }
+
+  pre {
+    @include type.type-style('code-01');
+    padding: layout.$spacing-04;
+    background-color: colors.$white;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+}
+
+.fileUpload {
+  div {
+    border: 1px solid colors.$gray-20;
+  }
+}
+
+.invalidRecords,
+.validRecords {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+}

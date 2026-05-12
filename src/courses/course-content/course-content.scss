@@ -1,0 +1,26 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-07;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 layout.$spacing-05;
+  width: 100%;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.viewerSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width: 400px) {
+  .contentContainer {
+    padding: 0 layout.$spacing-04;
+  }
+}

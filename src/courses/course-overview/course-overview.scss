@@ -1,0 +1,69 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-07;
+}
+
+.overviewHeader {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-04;
+
+  p {
+    color: colors.$gray-70;
+  }
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+}
+
+.courseAccordion {
+  border-left: 1px solid colors.$gray-20;
+  border-right: 1px solid colors.$gray-20;
+  border-radius: 4px;
+}
+
+.moduleTitle {
+  display: flex;
+  align-items: center;
+  gap: layout.$spacing-04;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.moduleNumber {
+  font-weight: 600;
+}
+
+.moduleType {
+  padding: layout.$spacing-02 layout.$spacing-03;
+  background-color: colors.$gray-20;
+  border-radius: 4px;
+  text-transform: uppercase;
+  min-width: 82px;
+  text-align: center;
+}
+
+.moduleName {
+  flex: 1;
+}
+
+.checkmark {
+  color: colors.$green-60;
+}
+
+.moduleContent {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+
+  p {
+    color: colors.$gray-70;
+  }
+}

@@ -1,0 +1,42 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.exerciseContainer {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-06;
+}
+
+.instructionsSection {
+  padding: layout.$spacing-05;
+  background-color: colors.$blue-10;
+  border-left: 4px solid colors.$blue-60;
+  border-radius: 4px;
+}
+
+.instructions {
+  white-space: pre-line;
+}
+
+.exerciseSection {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+}
+
+.feedbackSection {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-04;
+}
+
+.errorWithWhitespace {
+  white-space: pre-wrap;
+}
+
+.unknownType {
+  padding: layout.$spacing-04;
+  background-color: colors.$yellow-20;
+  color: colors.$gray-100;
+  border-left: 4px solid colors.$yellow-50;
+}

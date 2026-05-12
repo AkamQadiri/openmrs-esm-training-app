@@ -1,0 +1,38 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.card {
+  height: 100%;
+  display: flex;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border: 1px solid colors.$gray-20;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-03;
+  padding-bottom: layout.$spacing-04;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-04;
+  flex-grow: 1;
+
+  p {
+    color: colors.$gray-70;
+    margin-bottom: auto;
+  }
+}
+
+.cardFooter {
+  padding-top: layout.$spacing-05;
+}

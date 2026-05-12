@@ -1,0 +1,17 @@
+@use '@carbon/layout';
+@use '@openmrs/esm-styleguide/src/vars' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16rem;
+  padding: layout.$spacing-05;
+  background-color: $ui-background;
+  min-height: calc(100vh - 3rem);
+}
+
+@media (max-width: 1023px) {
+  .container {
+    margin-left: 0;
+  }
+}

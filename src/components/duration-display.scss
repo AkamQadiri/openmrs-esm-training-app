@@ -1,0 +1,14 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.labelDisplay {
+  display: inline-block;
+  color: colors.$gray-70;
+}
+
+.iconDisplay {
+  display: flex;
+  align-items: center;
+  gap: layout.$spacing-02;
+  color: colors.$gray-70;
+}

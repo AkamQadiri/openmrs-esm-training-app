@@ -1,0 +1,20 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.loadingContainer {
+  margin: auto;
+}
+
+.errorContainer {
+  padding: layout.$spacing-05;
+  background-color: colors.$red-10;
+  border-left: 4px solid colors.$red-60;
+  color: colors.$red-70;
+}
+
+.emptyContainer {
+  padding: layout.$spacing-05;
+  color: colors.$gray-70;
+  text-align: center;
+  margin: auto;
+}

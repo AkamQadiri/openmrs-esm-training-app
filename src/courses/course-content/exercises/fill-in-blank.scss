@@ -1,0 +1,41 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.optionsBank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: layout.$spacing-03;
+  padding: layout.$spacing-05;
+  background-color: colors.$gray-10;
+  border-radius: 4px;
+}
+
+.draggableOption {
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.blankSpace {
+  display: inline-flex;
+  min-width: 120px;
+  min-height: 32px;
+  padding: layout.$spacing-02 layout.$spacing-03;
+  border: 2px dashed colors.$gray-50;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-inline: layout.$spacing-02;
+  transition: background-color 0.2s ease;
+  justify-content: center;
+
+  &.dragActive {
+    background-color: colors.$gray-10;
+  }
+}

@@ -1,0 +1,91 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.requirementsList {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-04;
+}
+
+.requirementField {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: layout.$spacing-03;
+  align-items: center;
+  padding: layout.$spacing-03 0;
+  border-bottom: 1px solid colors.$gray-20;
+
+  dt {
+    font-weight: 600;
+    color: colors.$gray-70;
+  }
+
+  dd {
+    display: flex;
+    align-items: center;
+    gap: layout.$spacing-03;
+    color: colors.$gray-100;
+  }
+}
+
+.copyIcon {
+  cursor: pointer;
+  color: colors.$blue-60;
+  flex-shrink: 0;
+
+  &:hover {
+    color: colors.$blue-70;
+  }
+
+  &:active {
+    color: colors.$blue-80;
+  }
+}
+
+.helpSection {
+  background-color: colors.$gray-10;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: layout.$spacing-05;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ol {
+    list-style: decimal;
+    padding-left: layout.$spacing-06;
+    margin-top: layout.$spacing-03;
+
+    li {
+      margin-bottom: layout.$spacing-02;
+      color: colors.$gray-80;
+    }
+  }
+
+  p {
+    margin-top: layout.$spacing-03;
+    color: colors.$gray-80;
+  }
+}
+
+.externalLink {
+  color: colors.$blue-60;
+  text-decoration: underline;
+
+  &:hover {
+    color: colors.$blue-70;
+  }
+
+  &:visited {
+    color: colors.$purple-60;
+  }
+}
+
+.submissionSection {
+  padding-top: layout.$spacing-05;
+  border-top: 1px solid colors.$gray-20;
+}

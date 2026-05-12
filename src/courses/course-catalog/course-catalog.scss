@@ -1,0 +1,23 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.catalogContainer {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-06;
+  flex: 1;
+}
+
+.searchSection {
+  max-width: 600px;
+}
+
+.coursesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+}
+
+.gridColumn {
+  padding-bottom: layout.$spacing-05;
+}

@@ -1,0 +1,14 @@
+@use '@carbon/layout';
+@use '@carbon/colors';
+
+.lessonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.lessonHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: layout.$spacing-05;
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "training": "^1.0.0-SNAPSHOT"
+  },
+  "pages": [
+    {
+      "component": "root",
+      "route": "training",
+      "privilege": "Training - Participate"
+    }
+  ],
+  "extensions": [
+    {
+      "name": "training-app-menu-item",
+      "component": "trainingLink",
+      "slot": "app-menu-slot",
+      "meta": {
+        "label": "Training"
+      }
+    },
+    {
+      "name": "training-dashboard-left-panel-link",
+      "component": "dashboardLeftPanelLink",
+      "slot": "training-left-panel-slot",
+      "order": 0
+    },
+    {
+      "name": "training-courses-left-panel-link",
+      "component": "coursesLeftPanelLink",
+      "slot": "training-left-panel-slot",
+      "order": 1
+    },
+    {
+      "name": "training-analytics-left-panel-link",
+      "component": "analyticsLeftPanelLink",
+      "slot": "training-left-panel-slot",
+      "order": 2
+    },
+    {
+      "name": "training-bulk-create-students-left-panel-link",
+      "component": "bulkCreateStudentsLeftPanelLink",
+      "slot": "training-left-panel-slot",
+      "order": 3
+    }
+  ]
+}

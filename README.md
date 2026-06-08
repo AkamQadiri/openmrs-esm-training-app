@@ -1,15 +1,15 @@
 # OpenMRS Training App
 
-An OpenMRS frontend module for managing and delivering training courses within the OpenMRS 3.x platform.
+OpenMRS 3.x microfrontend for managing and delivering training courses.
 
 ## Overview
 
-The Training App provides a learning management system for OpenMRS, featuring:
+The Training App is a learning module for OpenMRS, featuring:
 
-* **Interactive Exercises**: Multiple choice, true/false, fill-in-blank, matching, ordering, concept creation, and form creation exercises
+* **Exercises**: Multiple choice, true/false, fill-in-blank, matching, ordering, concept creation, and form creation exercises
 * **Progress Tracking**: Monitor learner progress and completion rates
 * **Analytics Dashboard**: View course and user performance metrics
-* **Bulk User Creation**: Import students via CSV for efficient onboarding
+* **Bulk User Creation**: Import students via CSV
 
 ## Getting Started
 
